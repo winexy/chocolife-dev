@@ -1,0 +1,36 @@
+.info
+  @include flex--center
+  &__item
+    @include flex--center
+    margin: 0 10px
+    padding: 0 30px
+    color: #000
+    &:hover
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28)
+      color: #e41534
+      & .info__icon--bulb
+        background-position-y: -51px
+      & .info__icon--shield
+        background-position-y: -52px
+      & .info__icon--message
+        background-position-y: -52px
+
+
+  &__icon
+    background: url('../img/header.png') no-repeat
+    width: 30px
+    height: 34px
+    margin-right: 15px
+    &--bulb
+      background-position: -262px -115px
+    &--shield
+      background-position: -231px -115px
+    &--message
+      background-position: -293px -115px
+
+
+
+  &__content
+    text-transform: uppercase
+    color: inherit
+    font-size: 14px

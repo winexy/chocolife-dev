@@ -1,0 +1,89 @@
+.offers
+  @include flex--center
+  justify-content: space-between
+  width: 980px
+  margin: 0 auto
+  margin-top: 10px
+  flex-wrap: wrap
+
+
+  &__item
+    overflow: hidden
+    width: 315px
+    height: 315px
+    margin: 9px 0
+    transition: .3s ease-in-out
+    border: 1px solid #CCC
+
+    &--shadow
+      &:hover
+        box-shadow: 0 0 20px #888
+
+  &__image
+    width: 100%
+
+  &__info
+    position: relative
+    @include flex--center
+
+
+    &--dark
+      width: 100%
+      justify-content: space-between
+      background: rgba(0, 0, 0, 0.5)
+      color: #fff
+      padding: 15px
+      position: absolute
+      bottom: 2px
+
+    &:hover > .offers__hidden
+      display: block
+
+  &__hidden
+    display: none
+
+  &__inner
+    position: relative
+    height: 245px
+
+
+  &__price
+    font-weight: 500
+    font-size: 15px
+
+  &__prev-price
+    text-decoration: line-through
+    font-size: inherit
+    font-weight: inherit
+
+  &__sold
+    color: #fff
+    position: absolute
+    bottom: 20px
+    left: 20px
+    font-size: 14px
+    &--inner
+      font-size: 15px
+      position: relative
+    &--blue
+      color: #1379d5
+
+  &__button
+    position: absolute
+    bottom: 20px
+    right: 3px
+
+  &__description
+    padding: 10px
+
+  &__title
+    font-size: 15px
+    color: #444444
+  &__text
+    font-size: 14px
+
+
+
+
+
+

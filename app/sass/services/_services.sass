@@ -1,0 +1,49 @@
+.services
+  display: flex
+
+  &__item
+    width: 100px
+    height: 42px
+    //border: 1px solid black
+    background: url('../img/plashka_head.png') no-repeat
+    border-left: 1px solid #cfcfcf
+    cursor: pointer
+
+    &--selected
+      background-color: #fff
+
+    &--chocolife
+      background-position: -7px -50px
+      &::after
+        position: relative
+        top: 38px
+        display: block
+        width: 114px
+        height: 19px
+        background-position-x: 0%
+        background-position-y: 0%
+        content: ''
+        background: url("https://img.s3.chocolife.me/static/upload/images/css/header.png") no-repeat -323px -2px
+
+    &:not(&--chocomart):not(&--chocolife):hover
+      background-position-y: -51px
+
+
+
+    &--chocomart
+      width: 112px
+      background: url('../img/chocomart.gif')
+    &--chocotravel
+      background-position: -246px -9px
+    &--lensmark
+      background-position: -362px -9px
+    &--chocofood
+      background-position: -478px -9px
+    &--idoctor
+      background-position: -595px -9px
+      border-right: 1px solid #cfcfcf
+      &:hover
+        background-position-y: -40px
+
+
+

@@ -1,0 +1,73 @@
+.categories
+  @include flex--center
+  position: relative
+  background: #ffffff
+  width: 100%
+  border:
+    top: 1px solid #dcdcdc
+    bottom: 1px solid #dcdcdc
+  z-index: 1000
+
+  &--fixed
+    position: fixed
+    margin-top: -74px
+
+  &__item
+    font-weight: 500
+    font-size: 14px
+    margin: 15px 7px
+    cursor: pointer
+
+  &__active-element
+    position: absolute
+    width: 0
+    height: 5px
+    background: #bc0019
+    bottom: 0
+    left: 0
+    transition: .3s ease-in-out
+  //
+  //&::before
+  //  display: none
+  //  content: ''
+  //  position: absolute
+  //  width: 100%
+  //  height: 100px
+  //  top: -100px
+  //  left: 0
+  //  right: 0
+  //  background: rgba(0,0,0, .4)
+  //  z-index: 900
+  //  transition: 5s ease-in-out
+  //
+  //&::after
+  //  display: none
+  //  content: ''
+  //  position: absolute
+  //  width: 100%
+  //  height: 100vh
+  //  top: 48px
+  //  left: 0
+  //  right: 0
+  //  background: rgba(0,0,0, .4)
+  //  z-index: 2000
+  //  transition: 5s ease-in-out
+  //
+  //&:hover::before,
+  //&:hover::after
+  //  display: block
+
+  &__blur
+    position: absolute
+    z-index: 900
+    width: 100vw
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, .4)
+    transition: .3s ease-in-out
+    opacity: 0
+
+  &:hover + &__blur
+    opacity: 1

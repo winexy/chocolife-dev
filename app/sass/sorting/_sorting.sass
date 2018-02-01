@@ -1,0 +1,48 @@
+.sorting
+  width: 980px
+  height: 45px
+  margin: 0 auto
+  font-weight: 400
+  color: #666
+  font-size: 14px
+  @include flex--center
+  justify-content: space-around
+  border: 1px solid $accent
+  &__title
+    font-size: inherit
+
+  &__item
+    font-size: inherit
+    //margin: 0 20px 0 0
+    @include flex--center
+    cursor: pointer
+
+  &__radio
+    margin: 10px
+    display: none
+    &:checked + .sorting__fake-radio
+      border-color: $accent
+
+    
+  &__fake-radio
+    width: 18px
+    height: 18px
+    margin-right: 10px
+    //background: #fff
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 5px solid #CCC
+
+  &__order-block
+    position: relative
+    top: -5px
+  &__order
+    height: 8px
+    font-family: WebSymbolsLigaRegular
+    font-size: 17px
+    cursor: pointer
+    color: #CCC
+    &:hover
+      color: $accent
+
