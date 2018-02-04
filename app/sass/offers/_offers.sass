@@ -1,17 +1,17 @@
 .offers
   @include flex--center
-  justify-content: space-between
-  width: 980px
-  margin: 0 auto
-  margin-top: 10px
+  justify-content: flex-start
+  width: 990px
+  margin: 10px auto 0 auto
   flex-wrap: wrap
 
 
   &__item
-    overflow: hidden
+    display: block
+    position: relative
     width: 315px
     height: 315px
-    margin: 9px 0
+    margin: 7px
     transition: .3s ease-in-out
     border: 1px solid #CCC
 
@@ -26,7 +26,6 @@
     position: relative
     @include flex--center
 
-
     &--dark
       width: 100%
       justify-content: space-between
@@ -35,6 +34,9 @@
       padding: 15px
       position: absolute
       bottom: 2px
+      transition: .1s ease-in-out
+      height: 50px
+      //height: 80px
 
     &:hover > .offers__hidden
       display: block
@@ -48,6 +50,9 @@
 
 
   &__price
+    position: absolute
+    top: 18px
+    left: 15px
     font-weight: 500
     font-size: 15px
 
@@ -56,22 +61,43 @@
     font-size: inherit
     font-weight: inherit
 
+  &__rating
+    opacity: 0
+    transition: .3s .1s
+    position: absolute
+    top: 10px
+    right: 15px
+    width: 110px
+    height: 26px
+    background: url('../img/deals.png') no-repeat 0 -792px
+
   &__sold
     color: #fff
-    position: absolute
-    bottom: 20px
-    left: 20px
     font-size: 14px
+    position: absolute
+    bottom: 25px
+    left: 25px
     &--inner
-      font-size: 15px
-      position: relative
+      opacity: 0
+      font-weight: 500
+      font-size: 16px
+      line-height: 45px
+      bottom: 0
+      left: 15px
+      transition: .3s ease-in-out
     &--blue
       color: #1379d5
+
+  &__button-info
+    position: absolute
+    bottom: 15px
+    right: 15px
 
   &__button
     position: absolute
     bottom: 20px
     right: 3px
+
 
   &__description
     padding: 10px
@@ -81,6 +107,37 @@
     color: #444444
   &__text
     font-size: 14px
+    color: #333
+
+  &__discount
+    position: absolute
+    background: url('../img/deals.png') no-repeat 0 -574px
+    color: #fff
+    z-index: 10
+    width: 45px
+    height: 50px
+    left: 25px
+    top: -3px
+    padding-left: 3px
+    text-align: center
+    font-weight: 500
+    font-size: 14px
+    line-height: 40px
+
+  &__protection
+    position: absolute
+    top: -4px
+    left: 246px
+    z-index: 10
+    padding-left: 3px
+    width: 75px
+    height: 76px
+    background: url('../img/deals.png') no-repeat 0 -818px
+    color: #fff
+    text-align: center
+    font-weight: 500
+    font-size: 14px
+    line-height: 40px
 
 
 

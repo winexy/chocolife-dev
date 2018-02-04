@@ -7,20 +7,19 @@
 	<meta name="description" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="./assets/favicon.ico">
+	<link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/main.min.css">
-    <base href="https://winexy.github.io/chocolife/">
 </head>
 <body>
     <div class="header">
         <div class="wrapper header__wrapper">
             <div class="services">
-                <div class="services__item services__item--selected services__item--chocolife"></div>
-                <div class="services__item services__item--chocomart"></div>
-                <div class="services__item services__item--chocotravel"></div>
-                <div class="services__item services__item--lensmark"></div>
-                <div class="services__item services__item--chocofood"></div>
-                <div class="services__item services__item--idoctor"></div>
+                <a href="index.html" class="services__item services__item--selected services__item--chocolife"></a>
+                <a href="index.html" class="services__item services__item--chocomart"></a>
+                <a href="index.html" class="services__item services__item--chocotravel"></a>
+                <a href="index.html" class="services__item services__item--lensmark"></a>
+                <a href="index.html" class="services__item services__item--chocofood"></a>
+                <a href="index.html" class="services__item services__item--idoctor"></a>
             </div>
             <div class="header__auth-cart">
                 <div class="authorization">
@@ -37,7 +36,7 @@
         </div>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper top-indent">
             <div class="wrapper__flex">
                 <div class="cities">
                     <!--TODO cities dropdown-->
@@ -106,163 +105,177 @@
         <div class="sorting__item"></div>
         <label class="sorting__item">
             <input type="radio" name="sort" class="sorting__radio">
-            <div class="sorting__fake-radio"></div>
+            <span class="sorting__fake-radio"></span>
             популярные
         </label>
         <label class="sorting__item">
             <input type="radio" name="sort" class="sorting__radio">
-            <div class="sorting__fake-radio"></div>
+            <span class="sorting__fake-radio"></span>
             цена
-            <div class="sorting__order-block">
-                <div class="sorting__order sorting__order--asc">È</div>
-                <div class="sorting__order sorting__order--desc">Ë</div>
-            </div>
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
         </label>
         <label class="sorting__item">
             <input type="radio" name="sort" class="sorting__radio">
-            <div class="sorting__fake-radio"></div>
+            <span class="sorting__fake-radio"></span>
             скидка
-            <div class="sorting__order-block">
-                <div class="sorting__order sorting__order--asc">È</div>
-                <div class="sorting__order sorting__order--desc">Ë</div>
-            </div>
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
         </label>
         <label class="sorting__item">
             <input type="radio" name="sort" class="sorting__radio">
-            <div class="sorting__fake-radio"></div>
+            <span class="sorting__fake-radio"></span>
             новые
         </label>
         <label class="sorting__item">
             <input type="radio" name="sort" class="sorting__radio">
-            <div class="sorting__fake-radio"></div>
+            <span class="sorting__fake-radio"></span>
             рейтинг
-            <div class="sorting__order-block">
-                <div class="sorting__order sorting__order--asc">È</div>
-                <div class="sorting__order sorting__order--desc">Ë</div>
-            </div>
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
         </label>
     </form>
 
+
     <div class="offers">
-        <div class="offers__item offers__item--shadow">
+        <a href="offer.html" class="offers__item offers__item--shadow">
             <img src="img/offer_1.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold">Купили: 18135</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
+            <span class="offers__sold">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
             </div>
-        </div>
-
-        <div class="offers__item offers__item--shadow">
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_2.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div  class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
             <img src="img/offer_4.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold offers__sold--blue">Купили: 542</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
-            </div>
-        </div>
-
-        <div class="offers__item">
-            <div class="offers__discount"></div>
+            <span class="offers__sold offers__sold--blue">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
             <div class="offers__inner">
                 <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
                 <div class="offers__info offers__info--dark">
                     <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
-                    <div class="button button--yellow">Подробнее</div>
-                    <div class="offers__hidden">
-                        <div class="offers__sold offers__sold--inner">Купили: 18135</div>
-                    </div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
                 </div>
             </div>
             <div class="offers__description">
                 <h5 class="offers__title">Отель Тау House</h5>
                 <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
             </div>
-        </div>
-        <div class="offers__item">
-            <div class="offers__discount"></div>
-            <div class="offers__inner">
-                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
-                <div class="offers__info offers__info--dark">
-                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
-                    <div class="button button--yellow">Подробнее</div>
-                    <div class="offers__hidden">
-                        <div class="offers__sold offers__sold--inner">Купили: 18135</div>
-                    </div>
-                </div>
-            </div>
-            <div class="offers__description">
-                <h5 class="offers__title">Отель Тау House</h5>
-                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
-            </div>
-        </div>
-
-
-        <div class="offers__item offers__item--shadow">
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
             <img src="img/offer_1.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold">Купили: 18135</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
-            </div>
-        </div>
-
-
-        <div class="offers__item">
-            <div class="offers__discount"></div>
+            <span class="offers__sold">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
             <div class="offers__inner">
                 <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
                 <div class="offers__info offers__info--dark">
                     <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
-                    <div class="button button--yellow">Подробнее</div>
-                    <div class="offers__hidden">
-                        <div class="offers__sold offers__sold--inner">Купили: 18135</div>
-                    </div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
                 </div>
             </div>
             <div class="offers__description">
                 <h5 class="offers__title">Отель Тау House</h5>
                 <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
             </div>
-        </div>
-
-        <div class="offers__item">
-            <div class="offers__discount"></div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_2.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div  class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
             <div class="offers__inner">
                 <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
                 <div class="offers__info offers__info--dark">
                     <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
-                    <div class="button button--yellow">Подробнее</div>
-                    <div class="offers__hidden">
-                        <div class="offers__sold offers__sold--inner">Купили: 18135</div>
-                    </div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
                 </div>
             </div>
             <div class="offers__description">
                 <h5 class="offers__title">Отель Тау House</h5>
                 <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
             </div>
-        </div>
-
-        <div class="offers__item offers__item--shadow">
-            <img src="img/offer_1.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold">Купили: 18135</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
-            </div>
-        </div>
-
-        <div class="offers__item offers__item--shadow">
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
             <img src="img/offer_4.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold offers__sold--blue">Купили: 542</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
+            <span class="offers__sold offers__sold--blue">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
             </div>
-        </div>
-        <div class="offers__item offers__item--shadow">
-            <img src="img/offer_4.jpg" alt="offer" class="offers__image">
-            <div class="offers__info">
-                <div class="offers__sold offers__sold--blue">Купили: 542</div>
-                <div class="button button--yellow-block offers__button">Подробнее</div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
             </div>
-        </div>
+        </a>
 
     </div>
 
@@ -271,7 +284,7 @@
             <div>
                 <img src="img/1.jpg" alt="">
                 <h2 class="seo-block__title">Все скидки и акции в одном месте!</h2>
-                <a>Человеку для счастья нужно совсем мало: оставаться здоровым, иметь крепкую семью и хорошую работу, хранить гармонию души. Но иногда это не все. Не хватает какого-то приятного дополнения, например, получить бешеную скидку на популярную <a href="#" class="blue">услугу</a>. И этот бонус можем подарить вам именно мы! Благодаря купонам, приобретенным в нашем сервисе, вы сможете стать самым счастливым человеком в любой точке города Алматы.</p>
+                <p>Человеку для счастья нужно совсем мало: оставаться здоровым, иметь крепкую семью и хорошую работу, хранить гармонию души. Но иногда это не все. Не хватает какого-то приятного дополнения, например, получить бешеную скидку на популярную <a href="#" class="blue">услугу</a>. И этот бонус можем подарить вам именно мы! Благодаря купонам, приобретенным в нашем сервисе, вы сможете стать самым счастливым человеком в любой точке города Алматы.</p>
                 <p>Мы предлагаем скидки в Алматы на самые разнообразные виды деятельности и услуги, которые распределены по таким рубрикам:</p>
             </div>
                 <ul class="seo-block__list">
@@ -348,6 +361,11 @@
         </div>
 
     <div class="tutorial-widget"></div>
+    <div class="anchor">
+        <span class="anchor__text">
+            <span class="caret--top"></span>Вверх
+        </span>
+    </div>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

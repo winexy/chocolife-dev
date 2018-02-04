@@ -1,0 +1,51 @@
+.rules
+  position: absolute
+  top: 20px
+  right: 20px
+  width: 226px
+  background: #f8f8f8
+  transition: .3s ease-in-out
+  overflow: hidden
+
+  &__label
+    cursor: pointer
+    display: block
+    font-weight: 700
+    padding: 15px
+
+
+  &__caret
+    display: inline-block
+    position: relative
+    transition: .2s ease-in-out
+    transform: none
+    left: 10px
+    top: -5px
+    background: url('../img/deals.png') no-repeat -5px -1166px
+    width: 15px
+    height: 15px
+
+    &--show
+      transform: rotate(180deg)
+
+  &__checkbox
+    display: none
+    &:checked + .rules__text
+      height: 580px
+
+  &__text
+    height: 0
+    transition: .3s ease-in-out
+    padding: 5px
+    font-size: 13px
+
+    *
+      font-size: inherit
+
+    ul
+      padding: 0 10px
+      width: 194px
+      margin: 0 auto
+
+
+

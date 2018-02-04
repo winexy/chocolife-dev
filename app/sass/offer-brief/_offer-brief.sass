@@ -1,0 +1,35 @@
+.offer-brief
+  @include flex--center
+  flex-direction: column
+  width: 280px
+
+  &__price
+    font-size: 35px
+    font-weight: 700
+    color: #323232
+
+
+  &__text
+    color: #999
+    font-size: 13px
+    font-weight: 400
+
+    strong
+      color: #888
+
+    &--xl
+      margin: 10px 0 0 0
+      font-size: 20px
+      font-weight: 500
+      color: #888
+      @include flex--center
+
+  &__timer
+    @include flex--center
+    flex-direction: column
+    border:
+      top: 1px solid #ccc
+      bottom: 1px solid #ccc
+    width: 90%
+    padding: 10px 0
+    margin: 10px 0

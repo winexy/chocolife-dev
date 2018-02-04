@@ -1,0 +1,51 @@
+.reviews-info
+  @include flex--center
+  align-items: flex-start
+  border-bottom: 1px dashed #B5B5B5
+  padding-bottom: 20px
+  margin: 20px
+
+  &__brief
+    width: 50%
+
+  &__stats
+    width: 50%
+
+  &__rating-wrapper
+    position: relative
+    height: 20px
+    margin: 10px 0
+
+
+  &__rating-meter
+    position: absolute
+    z-index: 10
+    width: 125px
+    height: 20px
+    background-image: url('../img/heart_mask.png')
+    background-size: 26px
+    
+  &__user-mark
+    position: absolute
+    height: 20px
+    background-color: #D61514
+
+  &__rating-text
+    font-size: 17px
+    padding: 10px 3px
+    color: #312F2F
+
+    strong
+      font-weight: 700
+      font-size: 18px
+
+  &__rating-recommend
+    font-size: 16px
+    margin: 10px 0
+    padding: 5px 0
+
+  &__stats
+    span
+      font-size: 17px
+      padding: 10px 3px
+      color: #312F2F
