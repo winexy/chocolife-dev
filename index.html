@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+
+	<title>Купоны, скидки и акции в Казахстане: все скидочные купоны в одном месте на сайте Chocolife.me</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper header__wrapper">
+            <div class="services">
+                <a href="index.html" class="services__item services__item--selected services__item--chocolife"></a>
+                <a href="index.html" class="services__item services__item--chocomart"></a>
+                <a href="index.html" class="services__item services__item--chocotravel"></a>
+                <a href="index.html" class="services__item services__item--lensmark"></a>
+                <a href="index.html" class="services__item services__item--chocofood"></a>
+                <a href="index.html" class="services__item services__item--idoctor"></a>
+            </div>
+            <div class="header__auth-cart">
+                <div class="authorization">
+                    <div class="authorization__item">
+                        <a href="#" class="button button--yellow-block">Регистрация</a>
+                        <a href="#" class="button">Вход</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart__icon"></div>
+                    <div class="cart__items-count">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper top-indent">
+            <div class="wrapper__flex">
+                <div class="cities">
+                    <!--TODO cities dropdown-->
+                    <div class="cities__current-city">
+                        Алматы
+                        <span class="caret"></span>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="#" class="info__item">
+                        <div class="info__icon info__icon--bulb"></div>
+                        <p class="info__content">нужна помощь?</p>
+                    </a>
+                    <a href="#" class="info__item">
+                        <div class="info__icon info__icon--shield"></div>
+                        <p class="info__content">защита покупателей</p>
+                    </a>
+                    <a href="#" class="info__item">
+                        <div class="info__icon info__icon--message"></div>
+                        <p class="info__content">обратная связь</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="header__logo-search">
+                <div class="flex--center">
+                    <div class="logo"></div>
+                    <span class="slogan"> Главное, чтобы Вы были счастливы!</span>
+                </div>
+                <form class="form search-form form--shadow">
+                    <input type="text" placeholder="Найти среди 664 акций" class="input">
+                    <button type="submit" class="button button--type-submit button--yellow-block"></button>
+                </form>
+            </div>
+    </div>
+
+    <div class="categories">
+        <div class="categories__item">Все</div>
+        <div class="categories__item">Новые</div>
+        <div class="categories__item red">Хиты продаж</div>
+        <div class="categories__item">Развлечения и отдых</div>
+        <div class="categories__item">Красота и здоровье</div>
+        <div class="categories__item">Спорт</div>
+        <div class="categories__item">Товары</div>
+        <div class="categories__item">Услуг</div>
+        <div class="categories__item">Еда</div>
+        <div class="categories__item">Туризм, отели</div>
+        <div class="categories__item green">Бесплатные купоны</div>
+        <div class="categories__active-element"></div>
+    </div>
+    <div class="categories__blur"></div>
+
+    <div class="subcategories">
+        <div class="subcategories__item"></div>
+    </div>
+
+    <div class="commercials">
+        <a href="#" class="commercials__item commercials__item--for-kids"></a>
+        <a href="#" class="commercials__item commercials__item--invite-friend"></a>
+        <a href="#" class="commercials__item commercials__item--gym"></a>
+        <a href="#" class="commercials__item commercials__item--outdoor-activity"></a>
+    </div>
+
+    <form class="sorting">
+        <p class="sorting__title">Сортировать: </p>
+        <div class="sorting__item"></div>
+        <label class="sorting__item">
+            <input type="radio" name="sort" class="sorting__radio">
+            <span class="sorting__fake-radio"></span>
+            популярные
+        </label>
+        <label class="sorting__item">
+            <input type="radio" name="sort" class="sorting__radio">
+            <span class="sorting__fake-radio"></span>
+            цена
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
+        </label>
+        <label class="sorting__item">
+            <input type="radio" name="sort" class="sorting__radio">
+            <span class="sorting__fake-radio"></span>
+            скидка
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
+        </label>
+        <label class="sorting__item">
+            <input type="radio" name="sort" class="sorting__radio">
+            <span class="sorting__fake-radio"></span>
+            новые
+        </label>
+        <label class="sorting__item">
+            <input type="radio" name="sort" class="sorting__radio">
+            <span class="sorting__fake-radio"></span>
+            рейтинг
+            <span class="sorting__order-block">
+                <span class="sorting__order sorting__order--asc">È</span>
+                <span class="sorting__order sorting__order--desc">Ë</span>
+            </span>
+        </label>
+    </form>
+
+
+    <div class="offers">
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_1.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_2.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div  class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_4.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold offers__sold--blue">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_1.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_2.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold">Купили: 18135</span>
+            <div  class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+        <a href="offer.html" class="offers__item offers__item--shadow">
+            <img src="img/offer_4.jpg" alt="offer" class="offers__image">
+            <span class="offers__sold offers__sold--blue">Купили: 18135</span>
+            <div class="button button--yellow-block offers__button">Подробнее</div>
+        </a>
+        <a href="offer1.html" class="offers__item">
+            <div class="offers__discount">-60%</div>
+            <div class="offers__protection"></div>
+            <div class="offers__inner">
+                <img src="img/offer_3.jpg" alt="offer" class="offers__image offers__image--sm">
+                <div class="offers__info offers__info--dark">
+                    <div class="offers__price">от <span class="offers__prev-price">36 000</span> 20 000 тг.</div>
+                    <div class="button button--yellow offers__button-info">Подробнее</div>
+                    <div class="offers__sold offers__sold--inner">Купили: 826</div>
+                    <div class="offers__rating"></div>
+                </div>
+            </div>
+            <div class="offers__description">
+                <h5 class="offers__title">Отель Тау House</h5>
+                <p class="offers__text">Проживание в лучших номерах на 1 сутки</p>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="seo-block info-block--gray">
+        <div class="wrapper">
+            <div>
+                <img src="img/1.jpg" alt="">
+                <h2 class="seo-block__title">Все скидки и акции в одном месте!</h2>
+                <p>Человеку для счастья нужно совсем мало: оставаться здоровым, иметь крепкую семью и хорошую работу, хранить гармонию души. Но иногда это не все. Не хватает какого-то приятного дополнения, например, получить бешеную скидку на популярную <a href="#" class="blue">услугу</a>. И этот бонус можем подарить вам именно мы! Благодаря купонам, приобретенным в нашем сервисе, вы сможете стать самым счастливым человеком в любой точке города Алматы.</p>
+                <p>Мы предлагаем скидки в Алматы на самые разнообразные виды деятельности и услуги, которые распределены по таким рубрикам:</p>
+            </div>
+                <ul class="seo-block__list">
+                    <li class="seo-block__list-item">полная подборка (все самые актуальные);</li>
+                    <li class="seo-block__list-item">новые (самые свежие предложения);</li>
+                    <li class="seo-block__list-item">санатории (отдых и лечение в наиболее престижных санаториях);</li>
+                    <li class="seo-block__list-item"><a class="blue" href="#">красота</a> (услуги салонов красоты, а также отдельных мастеров);</li>
+                    <li class="seo-block__list-item">здоровье и спорт (услуги спортзалов, фитнес-клубов и т. д.);</li>
+                    <li class="seo-block__list-item">еда (рестораны, кондитерские, суши, доставка и т. д.);</li>
+                    <li class="seo-block__list-item">развлечения (караоке, сауна и т. д.);</li>
+                    <li class="seo-block__list-item">услуги (авто-услуги, свадебные услуги и т. д.);</li>
+                    <li class="seo-block__list-item">товары (для школы, для дома и т. д.);</li>
+                    <li class="seo-block__list-item">отдых (туризм, гостиницы, отели и т. д.).</li>
+                </ul>
+            <h2 class="seo-block__title">Покупайте купоны и экономьте на услугах и товарах!</h2>
+            <p>В нашем купонном сервисе Шоколайф можно приобрести горящие скидки и купоны в Алматы с самым разным акционным диапазоном: от 30% до 90%. На сайте представлено более 530 разных возможностей для реализации личных планов. Например, вы можете в очередной раз посетить «Sarafan cafe», но теперь со скидочным купоном на 50% оставить там намного меньшую сумму. Такой купон обойдется вам всего в 399 тенге.</p>
+            <p>Срок действия каждой акции в Алматы указан на нашем сайте. Эта информация поможет приобрести купон для посещения вами не только интересного предложения, но и оптимального во времени. Чтобы быстрее отыскать нужную акцию в нашем агрегаторе скидок, воспользуйтесь удобным поиском сайта онлайн по всем имеющимся рубрикам.</p>
+            <p>Отныне и навсегда сайт акций и скидок в Алматы должен стать вашим лучшим другом и помощником! С нашей помощью вы сэкономите уйму денежных средств, невозвратимое время и дорогое здоровье. Удобное оформление сайта, правильно подобранная цветовая гамма, удобство в расположении рубрик не оставят равнодушным ни молодежь, ни людей преклонного возраста.</p>
+            <p>Скидочные купоны в Алматы, представленные у нас — это гарантия настоящего качества. Мы ручаемся за каждого своего компаньона, уверены в безупречности каждого предложения, ведь все проверено лично нами! Если вы не успели применить скидку по назначению, или вас не устроило обслуживание — звоните по телефону, указанному на сайте, и наша служба заботы о пользователях обязательно даст вам все разъяснения. При возникновении вопросов или предложений также можно связаться с нами через форму обратной связи.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+            <div class="wrapper footer--space-between footer--upper">
+                <div class="info-columns">
+                    <div class="info-columns__item">
+                        <div class="info-columns__heading">Компания</div>
+                        <ul class="info-columns__list">
+                            <li class="info-columns__list-item">О Chocolife.me</li>
+                            <li class="info-columns__list-item">Пресса о нас</li>
+                            <li class="info-columns__list-item">Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="info-columns__item">
+                        <div class="info-columns__heading">Клиентам</div>
+                        <ul class="info-columns__list">
+                            <li class="info-columns__list-item">Обратная связь</li>
+                            <li class="info-columns__list-item">Обучающий видеоролик</li>
+                            <li class="info-columns__list-item">Вопросы и ответы</li>
+                            <li class="info-columns__list-item">Публичная оферта</li>
+                        </ul>
+                    </div>
+                    <div class="info-columns__item">
+                        <div class="info-columns__heading">Партнерам</div>
+                        <ul class="info-columns__list">
+                            <li class="info-columns__list-item">Для Вашего бизнеса</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-columns">
+                    <div class="info-columns__item info-columns__item--apps">
+                        <div class="info-columns__heading">Наше приложение</div>
+                        <ul class="info-columns__list">
+                            <li class="info-columns__list-item">Chocolife.me теперь еще удобнее и всегда под рукой!</li>
+                        </ul>
+                        <div class="mobile-apps">
+                            <a href="#" class="mobile-apps__item mobile-apps__item--google-play"></a>
+                            <a href="#" class="mobile-apps__item mobile-apps__item--app-store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper footer--space-between">
+                <div class="footer__text">Chocolife.me | 2011-2018  -  <a href="#">Карта сайта</a></div>
+                <div class="footer__text"></div>
+                <div class="social">
+                    <p>Chocolife.me в социальных сетях:</p>
+                    <a href="#" class="social__icon social__icon--vk"></a>
+                    <a href="#" class="social__icon social__icon--facebook"></a>
+                    <a href="#" class="social__icon social__icon--youtube"></a>
+                    <a href="#" class="social__icon social__icon--instagram"></a>
+                </div>
+            </div>
+        </div>
+
+    <div class="tutorial-widget"></div>
+    <div class="anchor">
+        <span class="anchor__text">
+            <span class="caret--top"></span>Вверх
+        </span>
+    </div>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
